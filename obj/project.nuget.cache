@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5v1pBP7glOJxfmybkEMhp9yxcRXBwjPsvMs0hUaNgYU9Wql6/IWxampNYAusUMGa+pvLEgV0zLR6Ntw7H9FLzQ==",
+  "success": true,
+  "projectFilePath": "/home/pi/dev/dotnet/dhTestIO2/dhTestIO/dhTestIO.csproj",
+  "expectedPackageFiles": [
+    "/home/pi/.nuget/packages/system.device.gpio/2.1.0/system.device.gpio.2.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
