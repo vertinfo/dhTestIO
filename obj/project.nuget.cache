@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5v1pBP7glOJxfmybkEMhp9yxcRXBwjPsvMs0hUaNgYU9Wql6/IWxampNYAusUMGa+pvLEgV0zLR6Ntw7H9FLzQ==",
+  "dgSpecHash": "6x5a+vNm5D20BKnYr8+vW2ObfdgWytEK2/iqM1+YyL8VHiqTOgj/y1puyV3qe8T2Z+IO3jJ0odGp3tUJ+y5s+Q==",
   "success": true,
-  "projectFilePath": "/home/pi/dev/dotnet/dhTestIO2/dhTestIO/dhTestIO.csproj",
+  "projectFilePath": "/home/danbryant/datahoist/Devops/Testing/dhTestIO/dhTestIO.csproj",
   "expectedPackageFiles": [
-    "/home/pi/.nuget/packages/system.device.gpio/2.1.0/system.device.gpio.2.1.0.nupkg.sha512"
+    "/home/danbryant/.nuget/packages/system.device.gpio/2.1.0/system.device.gpio.2.1.0.nupkg.sha512"
   ],
   "logs": []
 }
