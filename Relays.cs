@@ -6,7 +6,7 @@ namespace dhTestIO
 {
     public class Relays
     {
-        I2cDevice i2cDevice = I2cDevice.Create(new I2cConnectionSettings(6, 0x20));
+        I2cDevice i2cDevice = I2cDevice.Create(new I2cConnectionSettings(1, 0x20));
         GpioController controller = new GpioController(PinNumberingScheme.Board);
         Byte payload = 0xff;
         public Relays()
@@ -24,7 +24,7 @@ namespace dhTestIO
 
         public void ON_1()
         {
-            payload = 0x1 << 0;
+            payload &= 0x1 << 0;
             Console.WriteLine("ON 1...");
             /* Writing a byte to the I2C device. */
             try
@@ -41,7 +41,7 @@ namespace dhTestIO
 
         public void ON_2()
         {
-            payload = 0x1 << 1;
+            payload &= 0x1 << 1;
             Console.WriteLine("ON 2...");
             try
             {
@@ -57,7 +57,7 @@ namespace dhTestIO
 
         public void ON_3()
         {
-            payload = 0x1 << 2;
+            payload &= 0x1 << 2;
             Console.WriteLine("ON 3...");
             try
             {
@@ -73,7 +73,7 @@ namespace dhTestIO
 
         public void ON_4()
         {
-            payload = 0x1 << 3;
+            payload &= 0x1 << 3;
             Console.WriteLine("ON 4...");
             try
             {
@@ -89,7 +89,7 @@ namespace dhTestIO
 
         public void OFF_1()
         {
-            payload = 0x1 << 0;
+            payload &= 0x1 << 0;
             Console.WriteLine("OFF 1...");
             try
             {
@@ -105,7 +105,7 @@ namespace dhTestIO
 
         public void OFF_2()
         {
-            payload = 0x1 << 1;
+            payload &= 0x1 << 1;
             Console.WriteLine("ON 2...");
             try
             {
@@ -121,7 +121,7 @@ namespace dhTestIO
 
         public void OFF_3()
         {
-            payload = 0x1 << 2;
+            payload &= 0x1 << 2;
             Console.WriteLine("OFF 3...");
             try
             {
@@ -138,7 +138,7 @@ namespace dhTestIO
 
         public void OFF_4()
         {
-            payload = 0x1 << 3;
+            payload &= 0x1 << 3;
             Console.WriteLine("OFF 4...");
             try
             {
