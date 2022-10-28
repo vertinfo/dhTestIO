@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/danbryant/datahoist/Devops/Testing/dhTestIO/dhTestIO.csproj": {}
+    "/home/pi/dev/dotnet/dhTestIO/dhTestIO.csproj": {}
   },
   "projects": {
-    "/home/danbryant/datahoist/Devops/Testing/dhTestIO/dhTestIO.csproj": {
+    "/home/pi/dev/dotnet/dhTestIO/dhTestIO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/danbryant/datahoist/Devops/Testing/dhTestIO/dhTestIO.csproj",
+        "projectUniqueName": "/home/pi/dev/dotnet/dhTestIO/dhTestIO.csproj",
         "projectName": "dhTestIO",
-        "projectPath": "/home/danbryant/datahoist/Devops/Testing/dhTestIO/dhTestIO.csproj",
-        "packagesPath": "/home/danbryant/.nuget/packages/",
-        "outputPath": "/home/danbryant/datahoist/Devops/Testing/dhTestIO/obj/",
+        "projectPath": "/home/pi/dev/dotnet/dhTestIO/dhTestIO.csproj",
+        "packagesPath": "/home/pi/.nuget/packages/",
+        "outputPath": "/home/pi/dev/dotnet/dhTestIO/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/danbryant/.nuget/NuGet/NuGet.Config"
+          "/home/pi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/6.0.108/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/pi/.dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
         }
       }
     }

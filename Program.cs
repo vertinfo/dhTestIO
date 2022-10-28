@@ -12,26 +12,28 @@ Console.WriteLine("Hello, World!");
 Relays relays = new Relays();
 while (true)
 {
-    try{
+    try
+    {
+        relays.ON_1();
+        Thread.Sleep(5000);
+        relays.OFF_1();
+        Thread.Sleep(5000);
+        relays.ON_2();
+        Thread.Sleep(5000);
+        relays.OFF_2();
+        Thread.Sleep(5000);
+        relays.ON_3();
+        Thread.Sleep(5000);
+        relays.OFF_3();
+        Thread.Sleep(5000);
+        relays.ON_4();
+        Thread.Sleep(5000);
+        relays.OFF_4();
+        Thread.Sleep(5000);
 
     }
     catch(Exception ex){
         Console.WriteLine($"Exception writing to relays: {ex.Message}");
     }
-    relays.ON_1();
-    Thread.Sleep(5000);
-    relays.OFF_1();
-    Thread.Sleep(5000);
-    relays.ON_2();
-    Thread.Sleep(5000);
-    relays.OFF_2();
-    Thread.Sleep(5000);
-    relays.ON_3();
-    Thread.Sleep(5000);
-    relays.OFF_3();
-    Thread.Sleep(5000);
-    relays.ON_4();
-    Thread.Sleep(5000);
-    relays.OFF_4();
-    Thread.Sleep(5000);
+    
 }
