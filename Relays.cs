@@ -27,7 +27,15 @@ namespace dhTestIO
             payload = 0x1 << 0;
             Console.WriteLine("ON 1...");
             /* Writing a byte to the I2C device. */
-            i2cDevice.WriteByte(payload);
+            try
+            {
+                i2cDevice.WriteByte(payload);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception On 1: {ex.Message}");
+            }
+            
             //controller.Write(0x1 << (int)S6Base.USL, PinValue.High);
         }
 
@@ -35,7 +43,15 @@ namespace dhTestIO
         {
             payload = 0x1 << 1;
             Console.WriteLine("ON 2...");
-            i2cDevice.WriteByte(payload);
+            try
+            {
+                i2cDevice.WriteByte(payload);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception On 2: {ex.Message}");
+            }
+            
             //controller.Write(0x2 << (int)S6Base.DSL, PinValue.High);
         }
 
@@ -43,7 +59,15 @@ namespace dhTestIO
         {
             payload = 0x1 << 2;
             Console.WriteLine("ON 3...");
-            i2cDevice.WriteByte(payload);
+            try
+            {
+                i2cDevice.WriteByte(payload);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception On 3: {ex.Message}");
+            }
+            
             //controller.Write(0x3 << (int)S6Base.SP3, PinValue.High);
         }
 
@@ -51,7 +75,15 @@ namespace dhTestIO
         {
             payload = 0x1 << 3;
             Console.WriteLine("ON 4...");
-            i2cDevice.WriteByte(payload);
+            try
+            {
+                i2cDevice.WriteByte(payload);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception On 4: {ex.Message}");
+            }
+            
             //controller.Write(0x4 << (int)S6Base.DCL, PinValue.High);
         }
 
@@ -59,7 +91,15 @@ namespace dhTestIO
         {
             payload = 0x1 << 0;
             Console.WriteLine("OFF 1...");
-            i2cDevice.WriteByte(payload);
+            try
+            {
+                i2cDevice.WriteByte(payload);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception Off 1: {ex.Message}");
+            }
+            
             //controller.Write(0x1 << (int)S6Base.USL, PinValue.Low);
         }
 
@@ -67,7 +107,15 @@ namespace dhTestIO
         {
             payload = 0x1 << 1;
             Console.WriteLine("ON 2...");
-            i2cDevice.WriteByte(payload);
+            try
+            {
+                i2cDevice.WriteByte(payload);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception Off 2: {ex.Message}");
+            }
+            
             //controller.Write(0x2 << (int)S6Base.DSL, PinValue.Low);
         }
 
@@ -75,7 +123,15 @@ namespace dhTestIO
         {
             payload = 0x1 << 2;
             Console.WriteLine("OFF 3...");
-            i2cDevice.WriteByte(payload);
+            try
+            {
+                i2cDevice.WriteByte(payload);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception Off 3: {ex.Message}");
+            }
+            
             //controller.Write(0x3 << (int)S6Base.SP3, PinValue.Low);
 
         }
@@ -84,7 +140,15 @@ namespace dhTestIO
         {
             payload = 0x1 << 3;
             Console.WriteLine("OFF 4...");
-            i2cDevice.WriteByte(payload);
+            try
+            {
+                i2cDevice.WriteByte(payload);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine($"Exception Off 4: {ex.Message}");
+            }
+            
             //controller.Write(0x4 << (int)S6Base.DCL, PinValue.Low);
 
         }

@@ -12,6 +12,12 @@ Console.WriteLine("Hello, World!");
 Relays relays = new Relays();
 while (true)
 {
+    try{
+
+    }
+    catch(Exception ex){
+        Console.WriteLine($"Exception writing to relays: {ex.Message}");
+    }
     relays.ON_1();
     Thread.Sleep(5000);
     relays.OFF_1();
