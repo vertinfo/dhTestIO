@@ -6,7 +6,7 @@ namespace dhTestIO
 {
     public class Relays
     {
-        I2cDevice i2cDevice = I2cDevice.Create(new I2cConnectionSettings(1, 0x20));
+        I2cDevice i2cDevice = I2cDevice.Create(new I2cConnectionSettings(6, 0x20));
         GpioController controller = new GpioController(PinNumberingScheme.Board);
         Byte payload = 0xff;
         public Relays()
